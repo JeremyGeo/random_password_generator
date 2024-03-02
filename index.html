@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="slidecontainer">
+            <h2 class="h2 text">Custom range slider:</h2>
+            <input id="input" type="range" min="1" max="12" value="8" class="slider" >
+              
+          </div>
+          <h3 class="h3 text">
+            Maximal Character: <span id="slide-value"></span>
+          </h3>
+    </div>
+
+    <section class="Settings">
+        <div class="container">
+            <h2 class="h2 text">
+                Settings
+            </h2>
+            <ul>
+                <li>
+                    <div class="work-card">
+                        <h3 class="h3 text">
+                            Include Uppercase
+                        </h3>
+                        <label class="switch" id="switch1">
+                            <input type="checkbox" id="check1">
+                            <span class="toggle round"></span>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-card">
+                        <h3 class="h3 text">
+                            Include Symbols
+                        </h3>
+                        <label class="switch" id="switch2">
+                            <input type="checkbox" id="check2">
+                            <span class="toggle round"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="btn" id="button" >
+                <h3 class="h3 text">Generate</h3>
+            </div>
+            <h3 class="h2 text">Password: <span id="password"></span></h3>
+        </div>
+        
+    </section>
+    
+</body>
+
+<!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- js -->
+    <script src="script.js"></script>
+  
+</html>
